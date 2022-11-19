@@ -48,5 +48,30 @@ namespace Logical_Programe
                 Console.WriteLine("The entered number is not a Prime Number");
             }
         }
+
+        public static void Perfect_Number()
+        {
+            int number;
+            int result = 0, n;
+            Console.Write("Enter the Number : ");
+            number = Convert.ToInt32(Console.ReadLine());
+            n = number;
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    result = result + i;
+                }
+            }
+            if (result == n)
+            {
+                Console.WriteLine("The entered number is a perfect number");
+
+            }
+            else
+            {
+                Console.WriteLine("The entered number is not a perfect number");
+            }
+        }
     }
 }

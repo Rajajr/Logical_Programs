@@ -12,9 +12,9 @@ namespace Logical_Programe
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to programe");
-            Console.WriteLine("1:Fibonacci Series\n2:Prime Number");
+            Console.WriteLine("1:Fibonacci Series\n2:Prime Number\n3:Perfect Number");
             Console.WriteLine("Enter the Number:");
-
+            Console.WriteLine("--------------------------");
             var option=Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("-------------------");
 
@@ -26,6 +26,10 @@ namespace Logical_Programe
 
                 case 2:
                     Assignment.Prime_Number();
+                    break;
+
+                case 3:
+                    Assignment.Perfect_Number();
                     break;
 
                 
