@@ -73,5 +73,23 @@ namespace Logical_Programe
                 Console.WriteLine("The entered number is not a perfect number");
             }
         }
+
+        public static void ReverseNumber()
+        {
+            Console.Write("Enter a Number : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int reminder;
+            int result = 0;
+            while (number > 0)
+            {
+              
+                reminder = number % 10;
+               
+                result = (result * 10) + reminder;
+                 
+                number = number / 10;
+            }
+            Console.WriteLine($"Reversed number : {result}");
+        }
     }
 }
